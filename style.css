@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #16213e;
+  justify-content: center;
+}
+h1 {
+  color: #e94560;
+  margin-bottom: 8.4rem;
+  font-size: 4.8rem;
+  opacity: 0.6;
+  left: -3%;
+  position: relative;
+  font-weight: 700;
+}
+
+.container {
+  height: 4rem;
+  width: 32rem;
+  display: flex;
+  /* background-color: #e94560; */
+  justify-content: space-between;
+}
+.input-tasks {
+  width: 25rem;
+  font-size: 18px;
+  height: 4rem;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  background-color: #0f3460;
+}
+.input-tasks:focus {
+  outline: none;
+  border: solid #e94560;
+}
+
+.input-tasks::placeholder {
+  color: #777;
+  font-size: 15px;
+}
+
+.button-submit {
+  height: 2.4rem;
+  width: 8rem;
+  border: none;
+  border-radius: 10px;
+  position: relative;
+  bottom: -25%;
+  background-color: #16213e;
+  color: #e94560;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  opacity: 0.8;
+  transition: all 0.3s;
+  font-family: inherit;
+}
+
+.button-submit:hover,
+.button-submit:active {
+  opacity: 1;
+}
+
+.tasks {
+  list-style: none;
+
+  /* background-color: aliceblue; */
+}
+
+.div-tasks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-task {
+  width: 22rem;
+  margin-top: 3rem;
+  position: relative;
+  left: -10%;
+  height: 3rem;
+  border-radius: 12px;
+  font-size: 20px;
+  background-color: #533483;
+  border: none;
+  color: white;
+  font-family: inherit;
+}
+
+.input-task:focus {
+  outline: none;
+  border: solid #e94560;
+}
+.edit {
+  height: 2.4rem;
+  width: 4rem;
+  border: none;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 3rem;
+  background-color: #16213e;
+  color: #00ff00;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  opacity: 0.8;
+  transition: all 0.3s;
+  left: -5%;
+  font-family: inherit;
+}
+
+.delete {
+  height: 2.4rem;
+  width: 4rem;
+  border: none;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 3rem;
+  background-color: #16213e;
+  color: #ff4040;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  opacity: 0.8;
+  transition: all 0.3s;
+  left: -5%;
+  font-family: inherit;
+}
+
+.edit:hover,
+.edit:active {
+  opacity: 1;
+}
+
+.delete:hover,
+.delete:active {
+  opacity: 1;
+}
+.input-task [readonly]:focus {
+  outline: none;
+  border: solid #e94560;
+  text-decoration: none;
+}
+
+.input-task:focus {
+  outline: none;
+}
+.completed {
+  color: #b6b6b6;
+  text-decoration: line-through;
+}
+
+.complete {
+  height: 2.4rem;
+  width: 4rem;
+  border: none;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 3rem;
+  background-color: #16213e;
+  color: #e94560;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  opacity: 0.8;
+  transition: all 0.3s;
+  left:10%
+  font-family: inherit;
+}
+
+.complete:hover,
+.complete:active {
+  opacity: 1;
+}
